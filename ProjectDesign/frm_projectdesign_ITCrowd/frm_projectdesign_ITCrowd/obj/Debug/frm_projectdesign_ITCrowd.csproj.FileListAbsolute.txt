@@ -1,0 +1,11 @@
+I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\bin\Debug\frm_projectdesign_ITCrowd.exe.config
+I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\bin\Debug\frm_projectdesign_ITCrowd.exe
+I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\bin\Debug\frm_projectdesign_ITCrowd.pdb
+I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.csprojResolveAssemblyReference.cache
+I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.LogIn.resources
+I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.Properties.Resources.resources
+I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.csproj.GenerateResource.cache
+I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.csproj.CoreCompileInputs.cache
+I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.exe
+I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.pdb
+I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.MainForm.resources
