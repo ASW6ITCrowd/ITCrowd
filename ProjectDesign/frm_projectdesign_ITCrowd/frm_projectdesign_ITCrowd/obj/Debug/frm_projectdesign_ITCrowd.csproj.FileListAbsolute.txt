@@ -9,3 +9,15 @@ I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_IT
 I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.exe
 I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.pdb
 I:\6. Semester\ASW6\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.MainForm.resources
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\bin\Debug\frm_projectdesign_ITCrowd.exe.config
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\bin\Debug\frm_projectdesign_ITCrowd.exe
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\bin\Debug\frm_projectdesign_ITCrowd.pdb
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.LogIn.resources
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.MainForm.resources
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.Properties.Resources.resources
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.csproj.GenerateResource.cache
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.exe
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.pdb
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.NewCustomer.resources

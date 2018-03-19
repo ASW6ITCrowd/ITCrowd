@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using class_customer;
 
 namespace frm_projectdesign_ITCrowd
 {
@@ -17,6 +18,15 @@ namespace frm_projectdesign_ITCrowd
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LogIn());
+        }
+
+
+        public static Customer[] ReadCSV()
+        {
+            Customer[] cus = new Customer[100];
+
+
+            return cus;
         }
     }
 }

@@ -8,15 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;   //new
+using System.Security.Cryptography;     //new
+using System.IO;                        //new
 
 
 namespace class_customer
 {
     //frm_projectdesign_ITCrowd
-    class Customer
+    public class Customer
     {
         #region Membervariable
-        int customerID = 0;
+        int customerID;
         string firstName;
         string lastName;
         string emailAdr;
@@ -25,13 +27,13 @@ namespace class_customer
         #endregion
 
         #region Constructor
-        public Customer(string firstName, string lastName, string emailAdr, double accountBalance)
+        public Customer(string firstName, string lastName, string emailAdr, double accountBalance, int id)
         {
-            customerID++;
             this.firstName = firstName.ToUpper();
             this.lastName = lastName.ToUpper();
             this.emailAdr = emailAdr.ToLower();
             this.accountbalance = accountBalance;
+            this.customerID = id;
 
             //Check First Name if only letters
             for (int i = 0; i < firstName.Length; i++)
@@ -74,6 +76,10 @@ namespace class_customer
             {
                 return (this.customerID);
             }
+            set
+            {
+                this.customerID = value;
+            }
         }
 
         public string FirstName
@@ -102,7 +108,7 @@ namespace class_customer
         #region To-String
         public override string ToString()
         {
-            return (this.customerID + " " + this.firstName + "\n" + this.lastName + "\n" + this.accountbalance + "\n" + this.accountbalance + "\n" + this.emailAdr + "\n");
+            return (this.customerID + "  " + this.firstName + "   " + this.lastName + "   " + this.accountbalance + "   " + this.emailAdr + "   ");
         }
         #endregion
 
@@ -110,7 +116,7 @@ namespace class_customer
         //-------------------------------------------------------------------------------------------------------------
         //------------------------------------------ EMAIL - CHECK ----------------------------------------------------
         //-------------------------------------------------------------------------------------------------------------
-        static bool EmailChek(string email)
+        public static bool EmailChek(string email)
         {
             string afterAT = "";
             string beforeAT = "";
@@ -199,7 +205,123 @@ namespace class_customer
             }
             return (emailOK);
         }
+
+
+        //-------------------------------------------------------------------------------------------------------------
+        //-------------------------------------------- READ - CSV  ----------------------------------------------------
+        //-------------------------------------------------------------------------------------------------------------
+        public static Customer[] ReadCSV(string password)
+        {
+            Customer[] cus = new Customer[100];
+
+            StreamReader readFile = File.OpenText(@"..\..\Customers.csv");
+            string line = string.Empty;
+            string[] linesegment;
+
+            int i = 0;
+            while (readFile.Peek() != -1)
+            {
+                line = Encryption.DecryptString(readFile.ReadLine(), password);
+                linesegment = line.Split(';');
+                cus[i] = new Customer(linesegment[1], linesegment[2], linesegment[3], Convert.ToDouble(linesegment[4]), Convert.ToInt32(linesegment[0]));
+                i++;
+
+            }
+            readFile.Close();
+
+            return cus;
+        }
+
+        //-------------------------------------------------------------------------------------------------------------
+        //-------------------------------------------- WRITE - CSV  ----------------------------------------------------
+        //-------------------------------------------------------------------------------------------------------------
+        public static void WriteCSV(Customer[] customer, string password)
+        {
+            StreamWriter file = File.CreateText(@"..\..\Customers.csv");
+
+
+            for (int i = 0; i < customer.Length; i++)
+            {
+                if (customer[i] != null)
+                {
+                    file.WriteLine(Encryption.EncryptString(customer[i].CusID + ";" + customer[i].firstName + ";" + customer[i].lastName + ";" + customer[i].emailAdr + ";" + customer[i].AccBalance + ";" + customer[i].lastChange, password));
+                }
+                
+            }
+            file.Close();
+        }
         #endregion
+    }
+
+    public class Encryption
+    {
+        /// <summary>
+        /// Encrypts the string.
+        /// </summary>
+        /// <param name="clearText">The clear text.</param>
+        /// <param name="Key">The key.</param>
+        /// <param name="IV">The IV.</param>
+        /// <returns></returns>
+        private static byte[] EncryptString(byte[] clearText, byte[] Key, byte[] IV)
+        {
+            MemoryStream ms = new MemoryStream();
+            Rijndael alg = Rijndael.Create();
+            alg.Key = Key;
+            alg.IV = IV;
+            CryptoStream cs = new CryptoStream(ms, alg.CreateEncryptor(), CryptoStreamMode.Write);
+            cs.Write(clearText, 0, clearText.Length);
+            cs.Close();
+            byte[] encryptedData = ms.ToArray();
+            return encryptedData;
+        }
+
+        /// <summary>
+        /// Encrypts the string.
+        /// </summary>
+        /// <param name="clearText">The clear text.</param>
+        /// <param name="Password">The password.</param>
+        /// <returns></returns>
+        public static string EncryptString(string clearText, string Password)
+        {
+            byte[] clearBytes = System.Text.Encoding.Unicode.GetBytes(clearText);
+            PasswordDeriveBytes pdb = new PasswordDeriveBytes(Password, new byte[] { 0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76 });
+            byte[] encryptedData = EncryptString(clearBytes, pdb.GetBytes(32), pdb.GetBytes(16));
+            return Convert.ToBase64String(encryptedData);
+        }
+
+        /// <summary>
+        /// Decrypts the string.
+        /// </summary>
+        /// <param name="cipherData">The cipher data.</param>
+        /// <param name="Key">The key.</param>
+        /// <param name="IV">The IV.</param>
+        /// <returns></returns>
+        private static byte[] DecryptString(byte[] cipherData, byte[] Key, byte[] IV)
+        {
+            MemoryStream ms = new MemoryStream();
+            Rijndael alg = Rijndael.Create();
+            alg.Key = Key;
+            alg.IV = IV;
+            CryptoStream cs = new CryptoStream(ms, alg.CreateDecryptor(), CryptoStreamMode.Write);
+            cs.Write(cipherData, 0, cipherData.Length);
+            cs.Close();
+            byte[] decryptedData = ms.ToArray();
+            return decryptedData;
+        }
+
+        /// <summary>
+        /// Decrypts the string.
+        /// </summary>
+        /// <param name="cipherText">The cipher text.</param>
+        /// <param name="Password">The password.</param>
+        /// <returns></returns>
+        public static string DecryptString(string cipherText, string Password)
+        {
+            byte[] cipherBytes = Convert.FromBase64String(cipherText);
+            PasswordDeriveBytes pdb = new PasswordDeriveBytes(Password, new byte[] { 0x49, 0x76, 0x61, 0x6e, 0x20, 0x4d, 0x65, 0x64, 0x76, 0x65, 0x64, 0x65, 0x76 });
+            byte[] decryptedData = DecryptString(cipherBytes, pdb.GetBytes(32), pdb.GetBytes(16));
+            return System.Text.Encoding.Unicode.GetString(decryptedData);
+        }
     }
 }
 

@@ -34,16 +34,16 @@ namespace frm_projectdesign_ITCrowd
 
         private void btnLogInOK_Click(object sender, EventArgs e)
         {
-            if (this.tbUser.Text == "Admin" && this.tbPassword.Text == "1234")
-            {
+            //if (this.tbUser.Text == "Admin" && this.tbPassword.Text == "1234")
+            //{
                 MainForm dialogLogIn = new MainForm();
                 DialogResult result = dialogLogIn.ShowDialog();
 
-            }
-            else
-            {
-                MessageBox.Show("Wrong User or Password");
-            }
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Incorrect username or password.");
+            //}
             
         }
 
