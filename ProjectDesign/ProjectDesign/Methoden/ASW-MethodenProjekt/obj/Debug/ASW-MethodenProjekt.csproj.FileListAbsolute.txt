@@ -1,0 +1,30 @@
+C:\Users\Alex\Documents\Studium\ASW\ASW-MethodenProjekt\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.exe.config
+C:\Users\Alex\Documents\Studium\ASW\ASW-MethodenProjekt\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.exe
+C:\Users\Alex\Documents\Studium\ASW\ASW-MethodenProjekt\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.pdb
+C:\Users\Alex\Documents\Studium\ASW\ASW-MethodenProjekt\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\Studium\ASW\ASW-MethodenProjekt\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\Studium\ASW\ASW-MethodenProjekt\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.exe
+C:\Users\Alex\Documents\Studium\ASW\ASW-MethodenProjekt\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.pdb
+E:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.exe.config
+E:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.exe
+E:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.pdb
+E:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.csprojResolveAssemblyReference.cache
+E:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.exe
+E:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.pdb
+I:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.exe.config
+I:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.exe
+I:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.pdb
+I:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.csprojResolveAssemblyReference.cache
+I:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.csproj.CoreCompileInputs.cache
+I:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.exe
+I:\6. Semester\ASW-MethodenProjekt\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.pdb
+H:\ASW6ILV\ProjectDesign\Methoden\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.exe.config
+H:\ASW6ILV\ProjectDesign\Methoden\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.exe
+H:\ASW6ILV\ProjectDesign\Methoden\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.pdb
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\Methoden\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.exe.config
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\Methoden\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.exe
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\Methoden\ASW-MethodenProjekt\bin\Debug\ASW-MethodenProjekt.pdb
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\Methoden\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.csprojResolveAssemblyReference.cache
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\Methoden\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.csproj.CoreCompileInputs.cache
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\Methoden\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.exe
+C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\Methoden\ASW-MethodenProjekt\obj\Debug\ASW-MethodenProjekt.pdb
