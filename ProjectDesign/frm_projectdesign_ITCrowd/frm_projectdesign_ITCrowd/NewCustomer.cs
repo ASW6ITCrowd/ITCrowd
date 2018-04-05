@@ -13,23 +13,52 @@ namespace frm_projectdesign_ITCrowd
 {
     public partial class NewCustomer : Form
     {
-
+        Customer[] cusList;
         Customer newCus;
         private string firstName = "Max";
         private string lastName = "Mustermann";
         private string emailAddress = "max.musti@orf.at";
         private double accBalance = 0.0;
 
-        public NewCustomer()
+        public NewCustomer(Customer[] customer, bool english)
         {
             InitializeComponent();
+            cusList = customer;
+
+            //language
+            if (!english)
+            {
+                btnCloseNewCus.Text = "Schließen";
+                lbBalance.Text = "Guthaben";
+                lbEmail.Text = "Email Adresse";
+                lbFirstName.Text = "Vorname";
+                lbLastName.Text = "Nachname";
+            }
+            else
+            {
+                btnCloseNewCus.Text = "Close";
+                lbBalance.Text = "Account Balance";
+                lbEmail.Text = "Email Address";
+                lbFirstName.Text = "First Name";
+                lbLastName.Text = "Last Name";
+            }
         }
         
         private void btnOKNewCus_Click(object sender, EventArgs e)
         {
             int cusID = 0;
-            
-            newCus = new Customer(this.firstName, this.lastName, this.emailAddress, this.accBalance, cusID);
+
+            // check for a free ID Number
+            for (int i = 0; i < cusList.Length; i++)
+            {
+                if (cusList[i] == null)
+                {
+                    cusID = i + 1;
+                    break;
+                }
+            }
+
+            newCus = new Customer(this.firstName.ToUpper(), this.lastName.ToUpper(), this.emailAddress, this.accBalance, cusID);
            
         }
 
@@ -82,6 +111,23 @@ namespace frm_projectdesign_ITCrowd
 
         private void tbEmail_Validating(object sender, CancelEventArgs e)
         {
+            bool uniqueEmail = true;
+
+            //check if the email address is unique
+            for (int i = 0; i < cusList.Length; i++)
+            {
+                if (cusList[i] != null)
+                {
+                    if (tbEmail.Text == cusList[i].Email)
+                    {
+                        uniqueEmail = false;
+                        epError.SetError(tbEmail, "existent email address");
+                        e.Cancel = true;
+                        break;
+                    }
+                }
+            }
+
             //Check Email Address
             if (!Customer.EmailChek(tbEmail.Text))
             {
@@ -90,7 +136,10 @@ namespace frm_projectdesign_ITCrowd
             }
             else
             {
-                this.epError.Clear();
+                if (uniqueEmail == true)
+                {
+                    this.epError.Clear();
+                }
             }
         }
 
@@ -111,17 +160,33 @@ namespace frm_projectdesign_ITCrowd
         private void tbLastName_Validated(object sender, EventArgs e)
         {
             this.lastName = tbLastName.Text;
+            for (int i = 0; i < lastName.Length; i++)
+            {
+                Char.ToUpper(lastName[i]);
+            }
         }
 
         private void tbEmail_Validated(object sender, EventArgs e)
         {
             this.emailAddress = tbEmail.Text;
+            for (int i = 0; i < emailAddress.Length; i++)
+            {
+                Char.ToLower(emailAddress[i]);
+            }
         }
 
         private void tbFirstName_Validated(object sender, EventArgs e)
         {
             this.firstName = tbFirstName.Text;
+            for (int i = 0; i < firstName.Length; i++)
+            {
+                Char.ToUpper(firstName[i]);
+            }
         }
 
+        private void btnCloseNewCus_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -21,3 +21,15 @@ C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_pro
 C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.exe
 C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.pdb
 C:\Users\Alexander\Downloads\ITCrowd-master\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.NewCustomer.resources
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\bin\Debug\frm_projectdesign_ITCrowd.exe.config
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\bin\Debug\frm_projectdesign_ITCrowd.exe
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\bin\Debug\frm_projectdesign_ITCrowd.pdb
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.csprojResolveAssemblyReference.cache
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.LogIn.resources
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.MainForm.resources
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.NewCustomer.resources
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.Properties.Resources.resources
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.csproj.GenerateResource.Cache
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.exe
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.pdb
+C:\Users\S1510438037\Downloads\ITCrowd-master\ProjectDesign\frm_projectdesign_ITCrowd\frm_projectdesign_ITCrowd\obj\Debug\frm_projectdesign_ITCrowd.EditCustomer.resources

@@ -34,6 +34,7 @@ namespace class_customer
             this.emailAdr = emailAdr.ToLower();
             this.accountbalance = accountBalance;
             this.customerID = id;
+            this.lastChange = DateTime.Now;
 
             //Check First Name if only letters
             for (int i = 0; i < firstName.Length; i++)
@@ -68,6 +69,10 @@ namespace class_customer
             {
                 return (this.accountbalance);
             }
+            set
+            {
+                this.accountbalance = value;
+            }
         }
 
         public int CusID
@@ -75,10 +80,6 @@ namespace class_customer
             get
             {
                 return (this.customerID);
-            }
-            set
-            {
-                this.customerID = value;
             }
         }
 
@@ -95,6 +96,10 @@ namespace class_customer
             {
                 return (this.lastName);
             }
+            set
+            {
+                this.lastName = value;
+            }
         }
         public string Email
         {
@@ -102,13 +107,25 @@ namespace class_customer
             {
                 return (this.emailAdr);
             }
+            set
+            {
+                this.emailAdr = value;
+            }
+        }
+
+        public DateTime LastChange
+        {
+            set
+            {
+                this.lastChange = value;
+            }
         }
         #endregion
 
         #region To-String
         public override string ToString()
         {
-            return (this.customerID + "  " + this.firstName + "   " + this.lastName + "   " + this.accountbalance + "   " + this.emailAdr + "   ");
+            return (this.customerID + " " + this.firstName + " " + this.lastName + " " + this.accountbalance + " " + this.emailAdr + " " + this.lastChange.ToShortDateString() + "--" + this.lastChange.ToLongTimeString());
         }
         #endregion
 
@@ -224,6 +241,7 @@ namespace class_customer
                 line = Encryption.DecryptString(readFile.ReadLine(), password);
                 linesegment = line.Split(';');
                 cus[i] = new Customer(linesegment[1], linesegment[2], linesegment[3], Convert.ToDouble(linesegment[4]), Convert.ToInt32(linesegment[0]));
+                cus[i].LastChange = Convert.ToDateTime(linesegment[5]);
                 i++;
 
             }
@@ -233,7 +251,7 @@ namespace class_customer
         }
 
         //-------------------------------------------------------------------------------------------------------------
-        //-------------------------------------------- WRITE - CSV  ----------------------------------------------------
+        //-------------------------------------------- WRITE - CSV ----------------------------------------------------
         //-------------------------------------------------------------------------------------------------------------
         public static void WriteCSV(Customer[] customer, string password)
         {
@@ -249,6 +267,24 @@ namespace class_customer
                 
             }
             file.Close();
+        }
+
+        //-------------------------------------------------------------------------------------------------------------
+        //-------------------------------------------- PAY - MONEY -----------------------------------------------------
+        //-------------------------------------------------------------------------------------------------------------
+        public static void Pay(Customer cus, double amount)
+        {
+            cus.AccBalance += amount;
+            cus.LastChange = DateTime.Now;
+        }
+
+        //-------------------------------------------------------------------------------------------------------------
+        //-------------------------------------------- PAY - MONEY -----------------------------------------------------
+        //-------------------------------------------------------------------------------------------------------------
+        public static void Owe(Customer cus, double amount)
+        {
+            cus.AccBalance -= amount;
+            cus.LastChange = DateTime.Now;
         }
         #endregion
     }

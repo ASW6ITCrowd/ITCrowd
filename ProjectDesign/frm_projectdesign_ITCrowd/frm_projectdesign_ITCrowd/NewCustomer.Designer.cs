@@ -33,10 +33,10 @@
             this.tbLastName = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbAccBalance = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lbFirstName = new System.Windows.Forms.Label();
+            this.lbLastName = new System.Windows.Forms.Label();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.lbBalance = new System.Windows.Forms.Label();
             this.btnOKNewCus = new System.Windows.Forms.Button();
             this.btnCloseNewCus = new System.Windows.Forms.Button();
             this.epError = new System.Windows.Forms.ErrorProvider(this.components);
@@ -45,7 +45,7 @@
             // 
             // tbFirstName
             // 
-            this.tbFirstName.Location = new System.Drawing.Point(78, 77);
+            this.tbFirstName.Location = new System.Drawing.Point(23, 42);
             this.tbFirstName.Name = "tbFirstName";
             this.tbFirstName.Size = new System.Drawing.Size(100, 20);
             this.tbFirstName.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             // tbLastName
             // 
-            this.tbLastName.Location = new System.Drawing.Point(78, 126);
+            this.tbLastName.Location = new System.Drawing.Point(23, 91);
             this.tbLastName.Name = "tbLastName";
             this.tbLastName.Size = new System.Drawing.Size(100, 20);
             this.tbLastName.TabIndex = 1;
@@ -63,7 +63,7 @@
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(78, 170);
+            this.tbEmail.Location = new System.Drawing.Point(23, 135);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(100, 20);
             this.tbEmail.TabIndex = 2;
@@ -72,52 +72,52 @@
             // 
             // tbAccBalance
             // 
-            this.tbAccBalance.Location = new System.Drawing.Point(78, 240);
+            this.tbAccBalance.Location = new System.Drawing.Point(23, 183);
             this.tbAccBalance.Name = "tbAccBalance";
             this.tbAccBalance.Size = new System.Drawing.Size(100, 20);
             this.tbAccBalance.TabIndex = 3;
             this.tbAccBalance.Validating += new System.ComponentModel.CancelEventHandler(this.tbAccBalance_Validating);
             // 
-            // label1
+            // lbFirstName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(78, 58);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "First Name";
+            this.lbFirstName.AutoSize = true;
+            this.lbFirstName.Location = new System.Drawing.Point(23, 23);
+            this.lbFirstName.Name = "lbFirstName";
+            this.lbFirstName.Size = new System.Drawing.Size(57, 13);
+            this.lbFirstName.TabIndex = 4;
+            this.lbFirstName.Text = "First Name";
             // 
-            // label2
+            // lbLastName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(81, 104);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(58, 13);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Last Name";
+            this.lbLastName.AutoSize = true;
+            this.lbLastName.Location = new System.Drawing.Point(26, 69);
+            this.lbLastName.Name = "lbLastName";
+            this.lbLastName.Size = new System.Drawing.Size(58, 13);
+            this.lbLastName.TabIndex = 5;
+            this.lbLastName.Text = "Last Name";
             // 
-            // label3
+            // lbEmail
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(78, 153);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(73, 13);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Email Address";
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.Location = new System.Drawing.Point(23, 118);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(73, 13);
+            this.lbEmail.TabIndex = 6;
+            this.lbEmail.Text = "Email Address";
             // 
-            // label4
+            // lbBalance
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(78, 221);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Current Account Balance";
+            this.lbBalance.AutoSize = true;
+            this.lbBalance.Location = new System.Drawing.Point(23, 167);
+            this.lbBalance.Name = "lbBalance";
+            this.lbBalance.Size = new System.Drawing.Size(89, 13);
+            this.lbBalance.TabIndex = 7;
+            this.lbBalance.Text = "Account Balance";
             // 
             // btnOKNewCus
             // 
             this.btnOKNewCus.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOKNewCus.Location = new System.Drawing.Point(78, 310);
+            this.btnOKNewCus.Location = new System.Drawing.Point(11, 221);
             this.btnOKNewCus.Name = "btnOKNewCus";
             this.btnOKNewCus.Size = new System.Drawing.Size(75, 23);
             this.btnOKNewCus.TabIndex = 8;
@@ -127,12 +127,13 @@
             // 
             // btnCloseNewCus
             // 
-            this.btnCloseNewCus.Location = new System.Drawing.Point(184, 310);
+            this.btnCloseNewCus.Location = new System.Drawing.Point(92, 221);
             this.btnCloseNewCus.Name = "btnCloseNewCus";
             this.btnCloseNewCus.Size = new System.Drawing.Size(75, 23);
             this.btnCloseNewCus.TabIndex = 9;
             this.btnCloseNewCus.Text = "Close";
             this.btnCloseNewCus.UseVisualStyleBackColor = true;
+            this.btnCloseNewCus.Click += new System.EventHandler(this.btnCloseNewCus_Click);
             // 
             // epError
             // 
@@ -142,13 +143,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(425, 384);
+            this.ClientSize = new System.Drawing.Size(200, 264);
             this.Controls.Add(this.btnCloseNewCus);
             this.Controls.Add(this.btnOKNewCus);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbBalance);
+            this.Controls.Add(this.lbEmail);
+            this.Controls.Add(this.lbLastName);
+            this.Controls.Add(this.lbFirstName);
             this.Controls.Add(this.tbAccBalance);
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.tbLastName);
@@ -167,10 +168,10 @@
         private System.Windows.Forms.TextBox tbLastName;
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.TextBox tbAccBalance;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lbFirstName;
+        private System.Windows.Forms.Label lbLastName;
+        private System.Windows.Forms.Label lbEmail;
+        private System.Windows.Forms.Label lbBalance;
         private System.Windows.Forms.Button btnOKNewCus;
         private System.Windows.Forms.Button btnCloseNewCus;
         private System.Windows.Forms.ErrorProvider epError;
